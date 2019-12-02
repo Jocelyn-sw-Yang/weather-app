@@ -1,2 +1,2 @@
-# weather-app
+# weather-finder
 search weather
