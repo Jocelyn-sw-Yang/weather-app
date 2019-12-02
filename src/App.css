@@ -1,0 +1,145 @@
+.wrapper {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.video {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.video video {
+  width: 105%;
+  height: 100%;
+}
+
+.container {
+  width: 550px;
+  height: 600px;
+  overflow: hidden;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 70px;
+  background-color: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 0 6px #a3a3a3;
+}
+
+.title {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 700;
+  margin: 30px auto;
+  color: #3c46a0;
+}
+
+form {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+  transition:background-color 50000s ease-in-out 0s;
+}
+
+input {
+  border: none;
+  border-bottom: 1px solid #444fb3;
+  outline: medium;
+  background-color: transparent !important;
+  margin-left: 30px;
+  font-size: 20px;
+  width: 170px;
+}
+
+button {
+  width: 100px;
+  height: 40px;
+  outline:none;
+  border: none;
+  padding: 3px 25px;
+  margin-left: 30px;
+  background-color: #444fb3;
+  cursor: pointer;
+}
+
+button .search-icon {
+  font-size: 22px;
+  color: #fff;
+}
+
+.weather-container {
+  width: 100%;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.seperation {
+  width: 90%;
+  height: 1px;
+  border-bottom: 1px solid #4a5086;
+  margin: 0 auto 5px;
+}
+
+.weather-item {
+  width: 190px;
+  height: 100px;
+  margin: 20px 0 20px 50px;
+  padding-left: 20px;
+}
+
+.weather-item p {
+  font-size: 16px;
+  color: #4a5086;
+}
+
+.temperature {
+  margin-top: 10px;
+  font-size: 40px;
+}
+
+.weather-icon {
+  margin-top: 3px;
+  font-weight: 700;
+}
+
+.weather-icon .iconfont{
+  font-size: 67px;
+}
+
+.weather-detail {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-top: 10px;
+}
+
+.weather-detail img{
+  width: 50px;
+  height: 50px;
+}
+
+.weather-value {
+  height: 50px;
+  line-height: 50px;
+  margin-left: 20px;
+  font-size: 30px;
+}
+
+.weather-error {
+  margin: 10px 0 0 30px;
+  font-size: 20px;
+  color: red;
+  font-weight: 400;
+}
